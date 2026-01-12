@@ -19,7 +19,6 @@ public class LoopsPractice {
         System.out.println(sumOfDigits);
 
         fourHeads();
-
     }
 
 
