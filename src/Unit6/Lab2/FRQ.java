@@ -1,8 +1,8 @@
 package Unit6.Lab2;
 
 public class FRQ {
-    //Question 1
-    public int getPossibleAssemblies() {
+//    Question 1
+    /* public int getPossibleAssemblies() {
         int totalWheels = 0;
         int totalAxles = 0;
         for (Shelf shelf : shelfArray) {
@@ -110,5 +110,5 @@ public class FRQ {
             }
         }
         return true;
-    }
+    } */
 }

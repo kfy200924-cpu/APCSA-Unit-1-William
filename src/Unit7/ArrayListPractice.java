@@ -79,8 +79,25 @@ public class ArrayListPractice {
             if(currentWord.lastIndexOf("s") == currentWord.length() - 1) {
                 allWords.remove(j);
                 j--;
-                }
             }
+        }
         System.out.println(allWords);
+
+        int[] arr3 = {0, 4, 7, 13, 14, 25, 76, 117, 218, 309, 410};
+        int target = 218;//We want to find the index of the target
+
+        int left = 0;//first index
+        int right = arr3.length - 1;//last index
+        while(left <= right) {
+            int mid = (left + right) / 2;
+            if(arr3[mid] == target) {
+                System.out.println("Target is at " + mid);
+                break;
+            } else if(arr3[mid] > target) { //target is in left sub array
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
         }
     }
+}
